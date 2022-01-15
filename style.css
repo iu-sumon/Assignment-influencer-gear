@@ -276,8 +276,15 @@ section-popular-collection-style
 }
 
 /*** Mobile Device**/
-@media only screen and (max-width:688px)
- {  
+@media only screen and (max-width:576px)
+ {   nav 
+    {
+        display:flex;
+        align-items: center;
+        justify-content: center;
+
+
+     }
      .header-part-two
      {
          display:flex;
@@ -285,12 +292,16 @@ section-popular-collection-style
          align-items: center;
          margin-left:120px;
      }
+     
      .header-part-1
      {
          margin-right:0px;
          padding-bottom:0px;
      }
-      
+     .header-part-2 img 
+     {
+         margin-top:40px;
+     }
       .header-paragraph
       {
           font-weight: 600px;
@@ -328,6 +339,13 @@ section-popular-collection-style
          font-weight: 700;
          margin-bottom:16px;
      }
+     .banner img
+     {
+         width:300px;
+         height: 200px;
+         border-radius:25px;
+         margin-bottom: 30px;
+     }
      .banner-details
      {
         text-align: center;
@@ -337,32 +355,71 @@ section-popular-collection-style
        font-weight: 600;  
          
      }
-     .banner img
-     {
-         width:300px;
-         height: 200px;
-         border-radius:25px;
-         margin-bottom: 30px;
-     }
+    
       .footer
       {
           width:100%;
           height:239px;
       }
-    nav 
-    {
-        display:flex;
-        align-items: center;
-        justify-content: center;
-
-
-     }
-     .header-part-2 img 
-     {
-         margin-top:40px;
-     }
+    
 }
 
-/* Tab Device */
+/* Tablet Devices */
+@media only screen and (min-width:576px) and (max-width:768px)
+{
+    
+.header-part-two
+  {
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    margin-left:120px ;
+    margin-right:165px ;
+ }
+ .photo-svg
+ {
+     display: grid;
+     grid-template-columns: repeat(3,1fr);
+     grid-column-gap:61px;
+     align-items: center;
+     padding: 35px 61px;
+     border: 1px solid black;
+     border-radius:20px;
+     border-color: rgb(228, 201, 167);
+     margin: 0px 165px;
+ }  
+ .devices
+ {
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+     grid-column-gap:30px;
+     grid-row-gap:30px;
+     margin-left: 196px;
+     margin-right: 197px;
+ }
 
+ .creative
+ {
+     display: grid;
+     grid-template-columns: repeat(1,1fr);
+     justify-items: center;
+      margin-top:70px
+ }
+ .banner-details
+ {
+     margin-bottom: 16px;
+      font-size: 16px;
+      color: #6C6C6C;
+      font-weight: 600;
+      padding-left:150px;
+ }
+.banner-title
+{
+   padding-left: 150px;
+}
+ .banner-info a 
+ {
+   margin-left:150px;
+ }
+}
 
